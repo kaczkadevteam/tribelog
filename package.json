@@ -1,7 +1,7 @@
 {
   "name": "tribelog",
-  "private": true,
   "type": "module",
+  "private": true,
   "packageManager": "pnpm@9.9.0",
   "engines": {
     "pnpm": ">=9.7.0",
@@ -15,8 +15,20 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/kit": "3.13.1",
+    "@nuxt/schema": "3.13.1",
     "nuxt": "3.13.1",
     "vue": "3.5.2",
     "vue-router": "4.4.3"
+
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "3.2.2",
+    "eslint": "9.9.1",
+    "eslint-plugin-format": "0.1.2",
+    "eslint-plugin-quibble": "1.0.1",
+    "eslint-plugin-tailwindcss": "3.17.4",
+    "typescript": "5.5.4",
+    "vue-tsc": "2.0.29"
   }
 }
