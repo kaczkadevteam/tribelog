@@ -2,8 +2,13 @@
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import process from 'node:process'
+import { useLayers } from 'nuxt-layers-utils'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
+
+const layers = useLayers(__dirname, {
+  ui: 'layers/ui',
+})
 
 export default defineNuxtConfig({
   // Main config
@@ -20,6 +25,10 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
     '@nuxtjs/color-mode',
   ],
+
+  extends: layers.extends(),
+
+  alias: layers.alias('#'),
 
   imports: {
     dirs: [
@@ -53,7 +62,7 @@ export default defineNuxtConfig({
 
   i18n: {
     locales: [
-      { code: 'en', iso: 'en' },
+      { code: 'en', language: 'en' },
     ],
     strategy: 'prefix_except_default',
     defaultLocale: 'en',

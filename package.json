@@ -2,7 +2,7 @@
   "name": "tribelog",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.9.0",
+  "packageManager": "pnpm@9.10.0",
   "engines": {
     "pnpm": ">=9.7.0",
     "node": ">=v20.11.1"
@@ -45,13 +45,13 @@
     "@iconify-json/material-symbols": "1.1.82",
     "@iconify-json/uil": "1.1.8",
     "@nuxt/image": "1.8.0",
-    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@nuxtjs/tailwindcss": "6.12.1",
     "@types/node": "22.5.4",
     "eslint": "9.9.1",
     "eslint-plugin-format": "0.1.2",
     "eslint-plugin-quibble": "1.0.1",
     "eslint-plugin-tailwindcss": "3.17.4",
-    "nuxt-layers-utils": "^0.3.0",
+    "nuxt-layers-utils": "0.3.0",
     "nuxt-viewport": "2.1.6",
     "typescript": "5.5.4",
     "vue-tsc": "2.0.29"
