@@ -10,6 +10,10 @@ export default defineNuxtConfig({
     ],
   },
 
+  components: [
+    { path: '#ui/app/components/cn', prefix: 'cn', pattern: '**/*.vue' },
+  ],
+
   // Build
   typescript: {
     strict: true,

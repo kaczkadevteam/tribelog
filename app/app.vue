@@ -3,7 +3,7 @@
     <NuxtRouteAnnouncer />
 
     <div class="w-full">
-      <UiButton :label="$t('shared.hello')" />
+      <CNButton :label="$t('shared.hello')" />
 
       {{ $t('shared.hello') }}
     </div>
