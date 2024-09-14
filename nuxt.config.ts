@@ -8,6 +8,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 
 const layers = useLayers(__dirname, {
   ui: 'layers/ui',
+  auth: 'layers/auth',
 })
 
 export default defineNuxtConfig({
