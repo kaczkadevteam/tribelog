@@ -1,11 +1,9 @@
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
+  <NuxtRouteAnnouncer />
 
-    <div class="w-full">
-      <CNButton :label="$t('shared.hello')" />
+  <NuxtLoadingIndicator class="bg-gradient-to-r from-blue-500 to-blue-800" :color="false" />
 
-      {{ $t('shared.hello') }}
-    </div>
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>

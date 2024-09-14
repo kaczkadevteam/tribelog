@@ -1,5 +1,5 @@
 {
-  "shared": {
+  "common": {
     "hello": "Hello there!"
   }
 }
