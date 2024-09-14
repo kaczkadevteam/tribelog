@@ -17,7 +17,6 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxtjs/i18n',
-    'nuxt-viewport',
     '@vee-validate/nuxt',
     '@vueuse/nuxt',
     '@pinia/nuxt',

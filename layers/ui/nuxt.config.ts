@@ -1,7 +1,11 @@
+import { viewportBreakpoints } from '../../app/configs'
+import { ViewportBreakpoint } from '../../types/enums'
+
 export default defineNuxtConfig({
   // Main config
   modules: [
     '@nuxtjs/tailwindcss',
+    'nuxt-viewport',
   ],
 
   imports: {
@@ -14,6 +18,17 @@ export default defineNuxtConfig({
   components: [
     { path: '#ui/app/components/cn', prefix: 'cn', pattern: '**/*.vue' },
   ],
+
+  // Module
+  viewport: {
+    breakpoints: viewportBreakpoints,
+    fallbackBreakpoint: ViewportBreakpoint.LG,
+    defaultBreakpoints: {
+      desktop: ViewportBreakpoint.LG,
+      tablet: ViewportBreakpoint.MD,
+      mobile: ViewportBreakpoint.SM
+    }
+  },
 
   // Build
   typescript: {
